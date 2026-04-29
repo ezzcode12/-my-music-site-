@@ -1,59 +1,139 @@
-h1{
-    color: darkgoldenrod;
-    text-align: center;
-    text-decoration-line: underline;
-    font-weight: 900;
-}
 body {
-  background-image:url(image/1.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000, #1a1a1a);
+    color: white;
 }
-menu{
-    color: brown;
-    width: 400px;
-    float:left;
-    height: 100px;
 
-   ul{
-      float: left;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 35px;
+/* العنوان */
+h1 {
+    text-align: center;
+    color: gold;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
-}
-h2{
-    color: slateblue;
-    font-weight: 900px;
-    
 
+/* زر التشغيل */
+.button {
+    text-align: center;
+    margin: 20px;
 }
-.player {
-    background:black;
-    padding: 10px;
-    width: 300px;
+
+.button button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #00bcd4;
+    border: none;
     border-radius: 10px;
-    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.player p {
-    color: aliceblue;
-    margin-bottom: 30px;
-    font-weight:bolder;
+.button button:hover {
+    background: gold;
+    transform: scale(1.05);
 }
-footer {
-    background-color: #222;
-    color: green;
+
+/* القائمة */
+.MENU ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.MENU ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.MENU ul li a:hover {
+    color: gold;
+}
+
+/* العناوين */
+h2 {
     text-align: center;
-    padding: 30px;
+    color: #00bcd4;
+    margin-top: 30px;
+}
+
+/* الأغاني */
+audio {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+}
+
+/* النصوص */
+p {
+    text-align: center;
+    color: #ccc;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #111;
+    color: green;
+}
+
+/* 🎴 الكروت */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
-button{
-    align-items: center;
-    color: #222;
-    font-size: larger;
-    background-color:teal;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 20px; 
-    
+
+.card {
+    background: #1a1a1a;
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
+}
+
+.card h3 {
+    color: gold;
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+
+    .MENU ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    audio {
+        width: 90%;
+    }
+
+    .button button {
+        width: 90%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
