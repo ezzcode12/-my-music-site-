@@ -1,35 +1,91 @@
 <!DOCTYPE html>
- <html>
-    <head>
-      <title>ARAB TARAB.com</title>
-       <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>MUSIC world</h1>
-          
-        <div class="button">
-          <button>CLICK HERE TO LISTEN</button>
-        </div>
-        <div class="MENU">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">disgin</a></li>
-                <li><a href="#">help</a></li>
-            </ul>
+<html>
+<head>
+  <title>ARAB TARAB.com</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-            <h2>المزيكا غذاء الروح</h2>
-        <div class="player">
-            <p>song by : عبد الحليم</p>
-          <audio controls>
-            <source src="audio/song.mb3" type="audio/mpeg">
-            
-          </audio>
-        </div>
-        <footer>
-  <p>© 2026 Prod by EZZ</p>
-</footer>
-    </body>
- </html>
- 
+<body>
+
+  <h1>MUSIC WORLD 🎧</h1>
+
+  <div class="button">
+    <button onclick="document.getElementById('songs').scrollIntoView()">
+      CLICK HERE TO LISTEN
+    </button>
+  </div>
+
+  <div class="MENU">
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">service</a></li>
+      <li><a href="#">design</a></li>
+      <li><a href="#">help</a></li>
+    </ul>
+  </div>
+
+  <h2>المطربين</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>عبد الحليم حافظ</h3>
+    </div>
+
+    <div class="card">
+      <h3>عمرو دياب</h3>
+    </div>
+
+  </div>
+
+  <div id="songs">
+
+    <h2>أغاني عبد الحليم حافظ</h2>
+
+    <p>أغنية 1</p>
+    <audio controls>
+      <source src="audio/abdelhalim/song1.mb3" type="audio/mpeg">
+    </audio>
+
+    <p>أغنية 2</p>
+    <audio controls>
+      <source src="audio/abdelhalim/song2.mb3" type="audio/mpeg">
+    </audio>
+
+    <p>أغنية 3</p>
+    <audio controls>
+      <source src="audio/abdelhalim/song3.mb3" type="audio/mpeg">
+    </audio>
+
+    <h2>أغاني عمرو دياب</h2>
+
+    <p>أغنية 1</p>
+    <audio controls>
+      <source src="audio/amrdiab/song1.mb3" type="audio/mpeg">
+    </audio>
+
+    <p>أغنية 2</p>
+    <audio controls>
+      <source src="audio/amrdiab/song2.mb3" type="audio/mpeg">
+    </audio>
+
+    <p>أغنية 3</p>
+    <audio controls>
+      <source src="audio/amrdiab/song3.mb3" type="audio/mpeg">
+    </audio>
+
+    <p>أغنية 4</p>
+    <audio controls>
+      <source src="audio/amrdiab/song4.mb3" type="audio/mpeg">
+    </audio>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Prod by EZZ</p>
+  </footer>
+
+</body>
+</html> 
